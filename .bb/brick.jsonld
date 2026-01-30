@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "@type": "dcat:Dataset",
+  "name": "mixturesoldb-solubility-dataset",
+  "description": "MixtureSolDB: A dataset of experimentally measured solubility values for organic compounds in binary mixtures of solvents (organic-organic and organic-water) across various temperatures. Includes SMILES and mole fraction solubility.",
+  "keywords": ["solubility", "chemistry", "mixture", "solvent", "thermodynamics", "organic compounds"],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "dateCreated": "2026-01-30",
+  "version": "1.0.0",
+  "creator": {
+    "@type": "Organization",
+    "name": "BioBricks.ai"
+  },
+  "distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "name": "data.parquet",
+      "contentUrl": "brick/data.parquet",
+      "encodingFormat": "application/x-parquet"
+    }
+  ],
+  "measurementTechnique": "Experimental solubility measurement",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "solubility_mole_fraction",
+      "unitText": "mole fraction"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "solubility_g_per_100g",
+      "unitText": "g/100g"
+    }
+  ]
+}

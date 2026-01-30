@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@type": "DataDownload",
+  "name": "MixtureSolDB: Solubility in Binary Solvent Mixtures",
+  "url": "https://zenodo.org/records/18234735",
+  "dateAccessed": "2026-01-30",
+  "dcterms:source": "Zenodo",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "MixtureSolDB dataset"
+}

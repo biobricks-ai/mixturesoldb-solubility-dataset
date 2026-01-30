@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "columns": [
+    {
+      "name": "smiles",
+      "@type": "cheminf:CHEMINF_000018",
+      "description": "Canonical SMILES string of the solute",
+      "dataType": "string"
+    },
+    {
+      "name": "temperature_k",
+      "@type": "schema:QuantitativeValue",
+      "description": "Temperature in Kelvin",
+      "unitCode": "K",
+      "dataType": "float"
+    },
+    {
+      "name": "solubility_mole_fraction",
+      "@type": "schema:QuantitativeValue",
+      "description": "Solubility expressed as mole fraction",
+      "unitText": "mole fraction",
+      "dataType": "float"
+    },
+    {
+      "name": "logs_mole_fraction",
+      "@type": "schema:QuantitativeValue",
+      "description": "Logarithm of solubility (mole fraction)",
+      "dataType": "float"
+    },
+    {
+      "name": "solubility_g_g100",
+      "@type": "schema:QuantitativeValue",
+      "description": "Solubility in g/100g of solvent",
+      "unitText": "g/100g",
+      "dataType": "float"
+    },
+    {
+      "name": "logs_g_g100",
+      "@type": "schema:QuantitativeValue",
+      "description": "Logarithm of solubility (g/100g)",
+      "dataType": "float"
+    },
+    {
+      "name": "solvent1",
+      "description": "Name of the first solvent",
+      "dataType": "string"
+    },
+    {
+      "name": "solvent2",
+      "description": "Name of the second solvent",
+      "dataType": "string"
+    },
+    {
+      "name": "smiles_solvent1",
+      "@type": "cheminf:CHEMINF_000018",
+      "description": "SMILES string of the first solvent",
+      "dataType": "string"
+    },
+    {
+      "name": "smiles_solvent2",
+      "@type": "cheminf:CHEMINF_000018",
+      "description": "SMILES string of the second solvent",
+      "dataType": "string"
+    },
+    {
+      "name": "fraction_solvent1",
+      "@type": "schema:QuantitativeValue",
+      "description": "Fraction of the first solvent",
+      "dataType": "float"
+    },
+    {
+      "name": "fraction_type",
+      "description": "Type of fraction (e.g., mole, mass, volume)",
+      "dataType": "string"
+    },
+    {
+      "name": "compound_name",
+      "description": "Name of the solute compound",
+      "dataType": "string"
+    },
+    {
+      "name": "cas",
+      "description": "CAS Registry Number",
+      "dataType": "string"
+    },
+    {
+      "name": "pubchem_cid",
+      "description": "PubChem Compound ID",
+      "dataType": "integer"
+    },
+    {
+      "name": "fda_approved",
+      "description": "FDA Approval status",
+      "dataType": "string"
+    },
+    {
+      "name": "source",
+      "description": "Original source of the data point",
+      "dataType": "string"
+    }
+  ]
+}

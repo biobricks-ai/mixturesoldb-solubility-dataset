@@ -1,0 +1,32 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python stages/01_download.py
+    deps:
+    - path: stages/01_download.py
+      hash: md5
+      md5: 02c812398a7b2214d8dee4b7780565c4
+      size: 935
+    outs:
+    - path: download
+      hash: md5
+      md5: 100a1656446bb020778bc554f9fe99b8.dir
+      size: 38537760
+      nfiles: 1
+  build:
+    cmd: python stages/02_build.py
+    deps:
+    - path: download
+      hash: md5
+      md5: 100a1656446bb020778bc554f9fe99b8.dir
+      size: 38537760
+      nfiles: 1
+    - path: stages/02_build.py
+      hash: md5
+      md5: 26207ffb6d2b8d0bd691b16ec34a123d
+      size: 1621
+    outs:
+    - path: brick/data.parquet
+      hash: md5
+      md5: 880720bf0b02e2e24bbd4b703eae2632
+      size: 5068742
